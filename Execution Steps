@@ -1,0 +1,32 @@
+Setup Ansible:
+$ sudo apt-get install -y software-properties-common
+$ sudo apt-add-repository ppa:ansible/ansible
+$ sudo apt-get update
+$ sudo apt-get install -y ansible
+
+
+Verify the installation of Ansible:
+$ ansible --version
+
+On Master:
+
+$ ssh-keygen
+press enter
+press enter
+press enter
+
+Key will be generated
+
+[master] 
+
+$ cat /home/labsuser/.ssh/id_rsa.pub
+
+Copy this public key
+
+Go to worker node
+
+execute command:
+
+$ sudo vim ~/.ssh/authorized_keys
+
+In this file past the copies public key form master
